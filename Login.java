@@ -51,7 +51,7 @@ public class Login {
         while (checkExistingUser(username)){
             System.out.println("This username already exists.");
             System.out.println("Please choose another username.");
-            username = scanner.next();
+            username = scanner.next().toLowerCase();
         }
         System.out.println("Create a password:");
         scanner.nextLine();
